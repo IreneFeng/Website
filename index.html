@@ -318,7 +318,7 @@ footer{border-top:1px solid var(--rule);padding:2.2rem 3.5rem;display:flex;justi
       </a>
       <a href="https://mail.google.com/mail/?view=cm&to=irene901230@gmail.com" target="_blank" class="crow">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-        <span class="__cf_email__" data-cfemail="432a31262d267a737271707303242e222a2f6d202c2e">irene901230@gmail.com</span>
+        <span class="__cf_email__" data-cfemail="432a31262d267a737271707303242e222a2f6d202c2e"><span class="__cf_email__" data-cfemail="28415a4d464d1118191a1b18684f45494144064b4745">[email&#160;protected]</span></span>
       </a>
       <a href="https://linkedin.com/in/linwanfeng" target="_blank" class="crow">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -394,11 +394,11 @@ footer{border-top:1px solid var(--rule);padding:2.2rem 3.5rem;display:flex;justi
     <div class="eyebrow" data-n="03"><span>AI Platform</span></div>
     <h2>Built from scratch,<br><em>two agents live</em></h2>
     <div class="agent-card">
-      <span class="badge badge-teal" style="display:inline-flex;margin-bottom:1.1rem;">Live Platform · Two Agents · Demos Available</span>
+      <span class="badge badge-teal" style="display:inline-flex;margin-bottom:1.1rem;">In Active Development · Two Agents · Demo Available</span>
       <div class="agent-title">Annie the Agent — Any Agent. Always Ahead.</div>
-      <p class="agent-body">A platform I independently designed and built — a <strong>growing suite of purpose-built AI agents</strong>, each engineered to handle a specific operational job end to end. Currently live with two agents, with a phased roadmap extending into deeper workflow integration across messaging, calendar, and project management.</p>
-      <p class="agent-body"><strong>Annie</strong> is a 24/7 AI booking agent for home service businesses — answers every customer, detects emergencies, confirms service area by ZIP code, and schedules automatically. <strong>Amelia</strong> is an AI copilot built specifically for executive assistants and ops professionals — organises the inbox, prepares meeting briefs, tracks tasks, transcribes meetings live, and delivers a sharp daily brief. Built for the exact work I do every day.</p>
-      <p class="agent-body" style="font-style:italic;">The platform reflects the same thinking I bring to executive operations — systematic, scalable, always running.</p>
+      <p class="agent-body">A platform I independently designed and built — a <strong>growing suite of purpose-built AI agents</strong>, each engineered to handle a specific operational job end to end. Two agents currently deployed, with a phased roadmap extending into deeper workflow integration.</p>
+      <p class="agent-body"><strong>Annie</strong> is a 24/7 AI booking agent for home service businesses — answers every customer, detects emergencies, confirms service area by ZIP code, and schedules automatically. <strong>Amelia</strong> is an AI copilot for executive assistants — organising the inbox, preparing meeting briefs, tracking tasks, transcribing meetings, and delivering a sharp daily brief. As a practising EA, I am Amelia's primary user and tester, applying my real workflow daily to shape and refine the product.</p>
+      <p class="agent-body" style="font-style:italic;">Both agents reflect the same thinking I bring to executive operations — systematic, scalable, built to run without lifting a finger.</p>
       <div class="feat-tags">
         <span class="ftag">Annie · AI Booking Agent</span>
         <span class="ftag">Amelia · AI EA Copilot</span>
@@ -503,7 +503,7 @@ footer{border-top:1px solid var(--rule);padding:2.2rem 3.5rem;display:flex;justi
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function countUp(el) {
   const target = +el.dataset.target;
   const dur = 1200;
@@ -512,12 +512,4 @@ function countUp(el) {
     const p = Math.min((now - start) / dur, 1);
     const ease = 1 - Math.pow(1 - p, 3);
     el.textContent = Math.floor(ease * target);
-    if (p < 1) requestAnimationFrame(run);
-    else el.textContent = target;
-  };
-  requestAnimationFrame(run);
-}
-window.addEventListener('load', () => {
-  document.querySelectorAll('.counter').forEach(el => countUp(el));
-});
-</script>
+    if (p < 1) requestAnimationFr
