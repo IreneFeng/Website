@@ -503,7 +503,7 @@ footer{border-top:1px solid var(--rule);padding:2.2rem 3.5rem;display:flex;justi
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function countUp(el) {
   const target = +el.dataset.target;
   const dur = 1200;
@@ -512,4 +512,15 @@ function countUp(el) {
     const p = Math.min((now - start) / dur, 1);
     const ease = 1 - Math.pow(1 - p, 3);
     el.textContent = Math.floor(ease * target);
-    if (p < 1) requestAnimationFr
+    if (p < 1) requestAnimationFrame(run);
+    else el.textContent = target;
+  };
+  requestAnimationFrame(run);
+}
+
+// Run immediately + fallback
+document.querySelectorAll('.counter').forEach(el => countUp(el));
+window.addEventListener('load', () => {
+  document.querySelectorAll('.counter').forEach(el => countUp(el));
+});
+</script>
